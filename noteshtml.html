@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Maker</title>
+    <!-- link css -->
+    <link href="/javascript/notes website/notescss.css" rel="stylesheet">
+    <!-- link fontawsome -->
+    <script src="https://kit.fontawesome.com/2687fb36d2.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png"/>
+
+</head>
+<body>
+
+
+    <!-- nevigaiton bar -->
+    <div id="nav">
+
+        <div>
+             <h2>
+                 <i class="fa-solid fa-pen-to-square"id="pen"></i>
+           Notes Maker Online</h2>
+        </div>
+
+        <div id="search">
+        <textarea id="searchcontent" placeholder="enter note content"></textarea>
+        <button onclick="search()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        
+        <button onclick="reload()" id="reload">
+            <i class="fa-solid fa-arrow-rotate-right"></i>
+            Reload
+        </button>
+        </div>
+
+    </div>
+
+    <!-- search result -->
+    
+    <div id="searchcontainer">
+        <div id="found">
+
+        </div>
+        <button onclick="hide()">close</button>
+    </div>
+
+    <!-- container -->
+    <div id="container">
+
+        <!-- text container -->
+        <div id="subcontainer1">
+
+            <h2>title</h2>
+            <textarea id="title"></textarea>
+
+            <h2>Write your note here</h2>
+            <textarea id="text"></textarea>
+
+            <button id="create" style="width: fit-content;">
+             <i class="fa-solid fa-circle-plus"></i>
+             create</button>
+        </div>
+ 
+        
+
+        <!-- notes container -->
+        <h2>your notes:</h2>
+        <div id="subcontainer2">
+            
+           <!-- elements -->
+           
+        </div>
+        <button id="delete" onclick="clearnotes()">delete database</button>
+        
+     </div>
+
+
+</body>
+
+<!-- link javascript -->
+<script src="/javascript/notes website/notesjs.js"></script>
+</html>
